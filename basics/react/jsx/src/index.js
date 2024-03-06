@@ -1,0 +1,1 @@
+let foo = <div id="foo">Hello!</div>;
