@@ -1,1 +1,1 @@
-let foo = <div id="foo">Hello!</div>;
+let foo = <div id="foo">Hello!<span>child.</span></div>;
