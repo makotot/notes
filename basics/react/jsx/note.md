@@ -28,6 +28,10 @@
   - `@babel/plugin-transform-react-jsx`
     - https://github.com/babel/babel/blob/main/packages/babel-plugin-transform-react-jsx/src/create-plugin.ts
     - ASTということで、eslintのプラグインなどと同じようにビジターパターンで書かれているのが分かる
+    - `createElement`の中身
+      - https://github.com/babel/babel/blob/f020dbc7d66fb8d024791a12233d58fc19c9a827/packages/babel-plugin-transform-react-jsx/src/create-plugin.ts#L661-L676
+        - 環境によって利用するパッケージが異なる関係などがありそうで、`call`や`get`などの関数が使われている
+        - HTMLタグや属性が渡る雰囲気がある
 
 --- 
 
