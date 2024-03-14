@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      :root {
+        --btn-bg-color: #3e68ff;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      a.btn {
+        text-decoration: none;
+      }
+      button.btn {
+        box-sizing: border-box;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        font-family: inherit;
+        cursor: pointer;
+      }
+      a.btn, button.btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--btn-bg-color);
+        color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+        padding: 0.25em 1em;
+        min-width: 10ch;
+        min-height: 44px;
+        text-align: center;
+        line-height: 1.1;
+        transition: all 0.2s ease;
+
+        &:hover, &:active {
+          filter: brightness(150%);
+        }
+        &:focus {
+          outline-style: solid;
+          outline-color: transparent;
+          box-shadow: 0 0 0 4px rgba(62, 104, 255, 0.5);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- https://moderncss.dev/css-button-styling-guide/ -->
+    <a href="javascript:;" class="btn">Link</a>
+    <button class="btn">Button</button>
+  </body>
+</html>
